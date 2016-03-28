@@ -320,7 +320,7 @@ i.beh {
 	height: 48px;
 	border: none;
 	text-indent: 100%;
-	background: url("images/to-top2.png") no-repeat 0px 0px;
+	background: url("to-top2.png") no-repeat 0px 0px;
 }
 /*-- responsive-design --*/
 @media only screen and (max-width:1024px) {
