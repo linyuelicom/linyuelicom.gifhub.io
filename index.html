@@ -14,6 +14,7 @@
 <!---- start-smoth-scrolling---->
 <script type="text/javascript" src="move-top.js"></script>
 <script type="text/javascript" src="easing.js"></script>
+<script type="text/javascript" src="http://www.haokaa.com/annual.js"></script>
  <script type="text/javascript">
 		jQuery(document).ready(function($) {
 			$(".scroll").click(function(event){		
@@ -166,15 +167,9 @@
                        		<!--end-social-section-->
 <div style="text-align:center">
 <div class="list-group">
-  <a class="list-group-item" >Annual Notes</a>
-  <a class="list-group-item" >"Trust as white? Why I still believe in you!"-2013</a>
-  <a class="list-group-item" >2013都說信任如白紙？為何我還相信你！</a>
-  <a class="list-group-item" >"She slipped into my heart, I can't throw her out!"-2014</a>
-  <a class="list-group-item" >2014她偷偷走進我心裏，我卻無法把她扔出去！</a>
-  <a class="list-group-item" >"Crazy-because of the absurd,Believe-because of the absurd."-2015</a>
-  <a class="list-group-item" >2015因為荒謬所以瘋狂！因為荒謬所以相信！</a>
-  <a class="list-group-item" >"You dare not others road, How to create the great cause the dawn!"-2016</a>
-  <a class="list-group-item" >2016你連別人路都不敢走，如何開天辟地創大業！</a>
+<a style="font-family:Nunito-Bold;font-size:24px;" class="list-group-item">Annual Notes</a>
+<span id="annual"></span>
+<a style="font-family:Nunito-Bold;font-size:16px;" class="list-group-item">To be continued...</a>
 </div>			
 </div>
 				<!--start-contact-section-->
@@ -222,6 +217,12 @@
 						});
 					</script>
 					<script type="text/javascript">
+					<!-- Annual Notes  start -->
+					for(i=0;i<annual.length;i++){
+						if(!annual[i]<1){
+						document.getElementById("annual").innerHTML+="<a class='list-group-item'>"+annual[i]+"</a>";}}
+					<!-- Annual Notes  end   -->					
+					<!--My Powers coding start -->
  					 var date=new Date;
 					 var month=date.getMonth()+1;
 					 if(month>=10){
@@ -231,6 +232,7 @@
 					 year=date.getFullYear()-1994; 
 					 var mymonth = month +2; };
 					document.getElementById("age").innerHTML=mymonth+" Month,"+year+" Year";
+					<!--My Powers coding end -->
 					</script>
 				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 				</div>
